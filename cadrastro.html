@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login| History Volei</title>
+    <link rel="shortcut icon" href="imagens/FavIcon.png" type="image/x-icon">
+    <style>
+        *{
+                font-family: 'Poppins', sans-serif;
+        }
+        body{
+            background-image: linear-gradient(45deg, orange, yellow);
+        }
+        .tela-login{
+            background-color: rgba(0, 0, 0 ,0.9);
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 80px;
+            border-radius: 15px;
+            color: white;
+        }
+        input{
+            padding: 15px;
+            border: none;
+            outline: none;
+        }
+        button{
+            background-color:orange;
+            border: none;
+            border-radius: 10px;
+            width:100% ;
+            padding: 15px;
+            color: white;
+            font-size: 15px;
+        }
+        button:hover{
+            background-color: rgb(194, 127, 4);
+        }
+        select{
+            padding: 15px;
+            border: none;
+            outline: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="tela-login">
+        <h1>Cadastre-se</h1>
+        <input type="text" placeholder="Nome">
+        <br><br>
+        <input type="text" placeholder="Sobrenome">
+        <br><br>
+        <input type="password" placeholder="Senha">
+        <br><br>
+        <input type="text" placeholder="Celular">
+        <br><br>
+        <select name="Selecione o gêreno" id="elecione o gêreno">
+            <option value="Vazio">Selecione o gênero</option>
+            <option value="Masculino">Masculino</option>
+        <option value="Feminino">Feminino</option>
+    <option value="Outros">Outros</option></select>
+    <br><br>
+        <button>Enviar</button>
+    </div>
+    
+</body>
+</html>
