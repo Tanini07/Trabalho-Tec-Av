@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo 16 JS</title>
+
+    <style>
+        body{
+            background-image:url(paisagemGay.jpg);
+        }
+        
+        input[type="text"]{
+            width: 240px;
+            height: 30px;
+            border-radius: 7px;
+        }
+        input[type="text"]:focus{
+            outline: 2px solid white;
+        }
+        input[type="submit"]{
+            height: 40px;
+            width: 100px;
+            background-color: blueviolet;
+            border-radius: 10px;
+        }
+        input[type="submit"]:hover{
+            background-color:rgb(169, 104, 226) ;
+        }
+        button{
+            height: 40px;
+            width: 100px;
+            background-color: blueviolet;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <H2 style="text-align: center;">Exemplo 18 JavaScript</H2>
+    <h3 style="text-align: center;">Agenda</h3>
+        <H3>Preencha seus dados:</H3>
+        <div id="caralho">
+        <label for="nome">  Nome:</label>
+        <input type="text" name="nome" id="nome"> <br><br>
+        <label for="celular">Celular:</label>
+        <input type="text" name="cell" id="cell"> <br><br>
+        <!-- <input type="submit" id="idade" value="Enviar"> -->
+        <button id="cadastrar" onclick="cadastrar()">Cadastre-se</button>
+    </div>
+    <div id="dados"></div>
+    <script>
+      function cadastrar(){
+        const n = document.getElementById("nome").value;
+        const c = document.getElementById("cell").value;
+        const d = document.getElementById("dados");
+        const h3 = document.createElement("h2");
+        h3.innerHTML = n + " - " + c;
+        d.appendChild(h3);
+        document.getElementById("nome").value = " ";
+        document.getElementById("cell").value = ""
+;
+      }
+        
+    </script>
+
+</body>
+</html>
